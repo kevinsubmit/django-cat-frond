@@ -6,6 +6,10 @@ export const signUp = async (credentials) => {
     localStorage.setItem("token", resp.data.access);
     return resp.data.user;
   } catch (error) {
+    console.error(
+      "Sign-up Error: ",
+      error.response ? error.response.data : error
+    );
     throw error;
   }
 };

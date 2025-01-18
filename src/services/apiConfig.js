@@ -10,7 +10,7 @@ const getToken = () => {
 const api = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://your-deployed-app.herokuapp.com"
+      ? "https://cat-cat-9493de78e4db.herokuapp.com"
       : "http://localhost:8000",
 });
 
